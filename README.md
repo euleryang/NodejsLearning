@@ -6,4 +6,5 @@
 1. [Can't debug current typescript file in VS Code because corresponding JavaScript cannot be found](https://stackoverflow.com/questions/47125940/cant-debug-current-typescript-file-in-vs-code-because-corresponding-javascript)  
 1. [AssemblyScript入门指南](https://mp.weixin.qq.com/s/75CSzFeLtmFaWRLK9siXdg)  
 1. [The Assemblyscript Book](https://docs.assemblyscript.org/)  
-1. [WebAssembly完全入门：了解wasm的前世今身](https://mp.weixin.qq.com/s/68PRzQ4vuNFjI74fWSYrvw)
+1. [WebAssembly完全入门：了解wasm的前世今身](https://mp.weixin.qq.com/s/68PRzQ4vuNFjI74fWSYrvw)  
+1. [《Node.js 包教不包会》](https://github.com/alsotang/node-lessons)  

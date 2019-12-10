@@ -9,13 +9,12 @@
         "program": "${workspaceFolder}/server.ts",
         "cwd": "${workspaceFolder}",
         "protocol": "inspector",
-        "runtimeExecutable": "nodemon", // 或者 node-dev
+        "runtimeExecutable": "nodemon", // 或者 node-dev  nodemon
         "restart": true,
         "console": "integratedTerminal",
-        "outFiles": ["${workspaceFolder}/dist/*.js"]
-        // "outFiles": [
-        //   "${workspaceFolder}/build/*.js"
-        // ]
+        "outFiles": [
+          "${workspaceFolder}/dist/*.js"
+        ]
       }
     ]
   }

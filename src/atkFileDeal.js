@@ -3,8 +3,8 @@ var rwByLine = require('./lib/readWriteFileByLine.js');
 //按行读写，对行做字符替换处理
 var readName = './obj.txt';
 var writeName = './rt.txt';
-var readAtkName = 'D:\\Download\\ATK018200827\\ATK018200827MIN.TXT';
-var writAtkeName = 'D:\\Download\\ATK018200827\\ATK018200827MINNEW.TXT';
+var readAtkName = 'D:\\Download\\ATK018200827\\ATK018200827.TXT';
+var writAtkeName = 'D:\\Download\\ATK018200827\\ATK018200827NEW.TXT';
 
 var FC_Line = ' CNY0.00';
 var priceLineReg = /CNY\s+\d{1,5}.00\s+CN/;
@@ -26,8 +26,8 @@ function atkLineDeal(line) {
         marchBegin = true;
 
         ticketNo = line.match(ticketReg)
-        priceLine = line.match(priceLineReg)
-        price = line.match(priceReg)
+        priceLine = line.match(priceLineReg).toString()
+        price = priceLine.match(priceReg)
         console.log(ticketNo + "-" + i  + "-" + price)
         
         //rs = line.toString().replace("\\",'\/');

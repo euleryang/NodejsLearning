@@ -2,9 +2,18 @@
   "name": "demo",
   "version": "1.0.0",
   "description": "",
+  "devDependencies": {
+    "bluebird": "^2.9.34",
+    "istanbul": "*",
+    "mocha": "*",
+    "muk": "^0.3.2",
+    "rewire": "^2.3.4",
+    "should": "*",
+    "should-promised": "^0.3.0"
+  },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +21,7 @@
     "@types/express": "^4.17.2",
     "@types/node": "^12.12.16",
     "express": "^4.17.1",
-    "fs-extra": "^9.0.1"
+    "fs-extra": "^9.0.1",
+    "supertest": "^1.0.1"
   }
 }

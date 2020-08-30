@@ -21,34 +21,34 @@ describe('module', function () {
     });
   });
 
-  // 异步测试
-  describe('async', function () {
-    it('async', function (done) {
-      lib.async(function (result) {
-        done();
-      });
-    });
-  });
+//   // 异步测试
+//   describe('async', function () {
+//     it('async', function (done) {
+//       lib.async(function (result) {
+//         done();
+//       });
+//     });
+//   });
 
-  // 异常测试
-  describe("getContent", function () {
-    before(function () {
-      muk(fs, 'readFile', function(path, encoding, callback) {
-        process.nextTick(function () {
-          callback(new Error("mock readFile error"));
-        });
-      });
-    });
-    it('getContent', function (done) {
-      lib.getContent('text.txt', function (err, file) {
-        err.should.be.ok();
-        done();
-      })
-    });
-    after(function () {
-      muk.restore();
-    });
-  });
+//   // 异常测试
+//   describe("getContent", function () {
+//     before(function () {
+//       muk(fs, 'readFile', function(path, encoding, callback) {
+//         process.nextTick(function () {
+//           callback(new Error("mock readFile error"));
+//         });
+//       });
+//     });
+//     it('getContent', function (done) {
+//       lib.getContent('text.txt', function (err, file) {
+//         err.should.be.ok();
+//         done();
+//       })
+//     });
+//     after(function () {
+//       muk.restore();
+//     });
+//   });
 
   // 测试私有方法
   describe('add', function () {

@@ -3,8 +3,11 @@ var rwByLine = require('./lib/readWriteFileByLine.js');
 //按行读写，对行做字符替换处理
 var readName = './obj.txt';
 var writeName = './rt.txt';
-var readAtkName = 'D:\\Download\\ATK018200827\\ATK018200827.TXT';
-var writAtkeName = 'D:\\Download\\ATK018200827\\ATK018200827NEW.TXT';
+//ATK018200829
+//ATK018200828
+//ATK018200827
+var readAtkName = 'D:\\Download\\ATK018200829\\ATK018200829.TXT';
+var writAtkeName = 'D:\\Download\\ATK018200829\\ATK018200829NEW.TXT';
 
 var FC_Line = ' CNY0.00';
 var priceLineReg = /CNY\s+\d{1,5}.00\s+CN/;

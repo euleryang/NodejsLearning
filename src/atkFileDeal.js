@@ -6,13 +6,13 @@ var writeName = './rt.txt';
 //ATK018200829
 //ATK018200828
 //ATK018200827
-var readAtkName = 'D:\\Download\\ATK018200829\\ATK018200829.TXT';
-var writAtkeName = 'D:\\Download\\ATK018200829\\ATK018200829NEW.TXT';
+var readAtkName = 'D:\\Download\\ATK018200827\\ATK018200827.TXT';
+var writAtkeName = 'D:\\Download\\ATK018200827\\ATK018200827NEW.TXT';
 
 var FC_Line = ' CNY0.00';
 var priceLineReg = /CNY\s+\d{1,5}.00\s+CN/;
 var priceReg = /\d{1,5}.00/;
-var ticketReg = /018\d{10}\s/;
+var ticketReg = /018\d{10}/;
 var nullReg = /\sNULL\s/;
 var fcLineReg = /\sCNY0.00/;
 
@@ -31,24 +31,25 @@ function atkLineDeal(line) {
         ticketNo = line.match(ticketReg)
         priceLine = line.match(priceLineReg).toString()
         price = priceLine.match(priceReg)
-        console.log(ticketNo + "-" + i  + "-" + price)
-        
+        console.log(ticketNo[0])
+        //console.log(ticketNo + "-" + i  + "-" + price)
+
         //rs = line.toString().replace("\\",'\/');
     }
 
-    //false && 
+    //false &&
     if(marchBegin){
         var ticketLineReg = new RegExp(ticketNo);
         if(ticketLineReg.test(line)){
             if(fcLineReg.test(line)){
                 rs = line.toString().replace(FC_Line, price + "CNY" + price);
             }
-        
+
         } else {
             marchBegin= false;
         }
     }
-    
+
     return rs;
 }
 
@@ -56,6 +57,6 @@ var i = 0;
 rwByLine.readWriteFileByLineWithProcess(readAtkName, writAtkeName, atkLineDeal)
 
 //按行读写，无处理
-readName = './obj.txt';
-writeName = './rt1.txt';
-rwByLine.readWriteFileByLine(readName,writeName);
+// readName = './obj.txt';
+// writeName = './rt1.txt';
+// rwByLine.readWriteFileByLine(readName,writeName);

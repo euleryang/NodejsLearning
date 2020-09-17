@@ -53,9 +53,7 @@ app.post('/api/post', async (req, res) => {
             //let filesn = JSON.stringify(req.files);
             console.log(req.files);
             let avatar = req.files.avatar; // 声明字段名为 avatar 的图片数据为 avatar 变量
-            console.log("avatar %s", avatar);
             let md5 = crypto.createHash('md5').update(avatar.name).digest('hex'); // 取 avatar 文件名的 MD5 值
-            console.log("md5 %s", md5);
             avatar.mv('./uploads/' + md5 + path.extname(avatar.name)); // 存储(移动)图片到 uploads 文件夹，文件名为 avatar 文件名 MD5 + 文件拓展名
             // 发送以下 JSON 数据
             res.send({

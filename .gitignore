@@ -8,6 +8,8 @@ yarn-error.log*
 
 uploads/
 
+src/dist/
+
 # Runtime data
 pids
 *.pid

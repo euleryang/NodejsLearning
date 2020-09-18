@@ -9,6 +9,9 @@ tasks.json 如下：
 VS Code 运行 TypeScript 操作指南
 https://www.cnblogs.com/tinys-top/p/9090557.html
 
+TypeScript（一） 安装与调试
+https://zhuanlan.zhihu.com/p/43584032
+
 */
 
 const express = require("express");

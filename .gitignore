@@ -7,7 +7,7 @@ yarn-error.log*
 
 
 uploads/
-
+dist/
 src/dist/
 
 # Runtime data

@@ -19,6 +19,7 @@
     "filedeal": "node ./filedeal/index.js",
     "fileload": "node ./fileupload/index.js",
     "ws": "node ./websocket/index.js",
+    "ts": "tsc ./tsserver/index.ts",
     "start": "node index.js",
     "coverage": "nyc --reporter html --reporter text npm test"
   },
@@ -38,6 +39,7 @@
     "moment": "^2.28.0",
     "morgan": "^1.10.0",
     "nodejs-websocket": "^1.7.2",
+    "nodemon": "^2.0.4",
     "supertest": "^1.0.1"
   }
 }

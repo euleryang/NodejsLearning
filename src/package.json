@@ -18,6 +18,7 @@
     "redislimit": "set REDIS_HOST=172.22.0.22&& node ./redislimit/index.js",
     "filedeal": "node ./filedeal/index.js",
     "fileload": "node ./fileupload/index.js",
+    "ws": "node ./websocket/index.js",
     "start": "node index.js",
     "coverage": "nyc --reporter html --reporter text npm test"
   },

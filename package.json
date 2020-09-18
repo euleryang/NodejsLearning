@@ -18,7 +18,6 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter dot",
     "redislimit": "set REDIS_HOST=172.22.0.22&& node ./src/redislimit/index.js",
     "filedeal": "node ./src/filedeal/index.js",
     "fileload": "node ./src/fileupload/index.js",
@@ -30,6 +29,7 @@
     "lite": "lite-server",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
+    "test": "mocha --reporter dot",
     "coverage": "nyc --reporter html --reporter text npm test"
   },
   "author": "",

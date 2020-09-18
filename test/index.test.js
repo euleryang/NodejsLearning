@@ -6,7 +6,7 @@
  * @description
  *
  */
-var lib = require("./index");
+var lib = require("../src/index");
 var fs = require('fs');
 var muk = require("muk");
 var rewire = require("rewire");
@@ -66,7 +66,7 @@ describe('module', function () {
   // 测试私有方法
   describe('add', function () {
     it('add', function () {
-      var lib = rewire('../index');
+      var lib = rewire('../src/index');
       var add = lib.__get__('_adding');
       var sum = add(1, 3);
       assert.equal(sum, 4);

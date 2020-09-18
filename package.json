@@ -22,6 +22,7 @@
     "fileload": "node ./src/fileupload/index.js",
     "ws": "node ./src/websocket/index.js",
     "tsnode": "cross-env ts-node ./src/tsserver/index.ts",
+    "tsnode-test": "ts-node ./src/typescript/test.ts",
     "start": "node ./src/index.js",
     "coverage": "nyc --reporter html --reporter text npm test"
   },

@@ -13,12 +13,11 @@
   },
 
   "include": [
-    "*.ts", "tsserver/index.ts"
+    "*.ts", "tsserver/index.ts", "typescript/test.ts"
   ],
 
   "exclude": [
-    "index.js",
-    "hello.js"
+    "index.js"
   ],
   "watch": true
 }

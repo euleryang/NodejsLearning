@@ -4,6 +4,7 @@
   "description": "",
   "devDependencies": {
     "bluebird": "^2.9.34",
+    "concurrently": "^5.3.0",
     "istanbul": "*",
     "lite-server": "^2.5.4",
     "mocha": "^8.1.3",

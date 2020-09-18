@@ -1,4 +1,4 @@
-var rwByLine = require('./lib/readWriteFileByLine.js');
+var rwByLine = require('../lib/readWriteFileByLine.js');
 
 //按行读写，对行做字符替换处理
 var readName = './src/obj.txt';

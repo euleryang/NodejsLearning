@@ -6,7 +6,7 @@
  * @description
  *
  */
-var lib = require("../index");
+var lib = require("./index");
 var fs = require('fs');
 var muk = require("muk");
 var rewire = require("rewire");

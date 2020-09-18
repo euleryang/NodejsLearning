@@ -10,17 +10,18 @@
     "nyc": "^15.1.0",
     "rewire": "^2.3.4",
     "should": "*",
-    "should-promised": "^0.3.0"
+    "should-promised": "^0.3.0",
+    "ts-node": "^7.0.0"
   },
   "main": "index.js",
   "scripts": {
     "test": "mocha --reporter dot",
-    "redislimit": "set REDIS_HOST=172.22.0.22&& node ./redislimit/index.js",
-    "filedeal": "node ./filedeal/index.js",
-    "fileload": "node ./fileupload/index.js",
-    "ws": "node ./websocket/index.js",
-    "tsnode": "ts-node ./tsserver/index.ts",
-    "start": "node index.js",
+    "redislimit": "set REDIS_HOST=172.22.0.22&& node ./src/redislimit/index.js",
+    "filedeal": "node ./src/filedeal/index.js",
+    "fileload": "node ./src/fileupload/index.js",
+    "ws": "node ./src/websocket/index.js",
+    "tsnode": "cross-env ts-node ./src/tsserver/index.ts",
+    "start": "node ./src/index.js",
     "coverage": "nyc --reporter html --reporter text npm test"
   },
   "author": "",

@@ -4,7 +4,7 @@
     "module": "commonjs",
     "allowJs": true,
     "checkJs": true,
-    "outDir": "./dist",
+    "outDir": "./src/dist",
     "sourceMap": true,
     "strict": true,
     "noImplicitAny": true,
@@ -13,11 +13,11 @@
   },
 
   "include": [
-    "*.ts", "tsserver/index.ts"
+    "src/*.ts", "src/tsserver/index.ts"
   ],
 
   "exclude": [
-    "index.js"
+    "src/index.js"
   ],
   "watch": true
 }

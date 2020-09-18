@@ -1,8 +1,6 @@
 var rwByLine = require('../lib/readWriteFileByLine.js');
 
 //按行读写，对行做字符替换处理
-var readName = './obj.txt';
-var writeName = './rt.txt';
 //ATK018200829
 //ATK018200828
 //ATK018200827
@@ -55,8 +53,3 @@ function atkLineDeal(line) {
 
 var i = 0;
 rwByLine.readWriteFileByLineWithProcess(readAtkName, writAtkeName, atkLineDeal)
-
-//按行读写，无处理
-// readName = './obj.txt';
-// writeName = './rt1.txt';
-// rwByLine.readWriteFileByLine(readName,writeName);

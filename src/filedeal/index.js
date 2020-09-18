@@ -1,8 +1,8 @@
 var rwByLine = require('../lib/readWriteFileByLine.js');
 
 //按行读写，对行做字符替换处理
-var readName = './src/obj.txt';
-var writeName = './src/rt.txt';
+var readName = './static/obj.txt';
+var writeName = './static/rt.txt';
 
 function lineDeal(line) {
 
@@ -17,6 +17,6 @@ var i = 0;
 rwByLine.readWriteFileByLineWithProcess(readName, writeName, lineDeal)
 
 //按行读写，无处理
-readName = './src/obj.txt';
-writeName = './src/rt1.txt';
-rwByLine.readWriteFileByLine(readName,writeName);
+readName = './static/obj.txt';
+writeName = './static/rt1.txt';
+rwByLine.readWriteFileByLine(readName, writeName);

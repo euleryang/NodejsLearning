@@ -24,6 +24,7 @@
     "ws": "node ./src/websocket/index.js",
     "tsnode": "cross-env ts-node ./src/tsserver/index.ts",
     "tsnode-test": "ts-node ./src/typescript/test.ts",
+    "email": "node ./src/email/main.js",
     "start": "node ./src/index.js",
     "startts": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\"",
     "lite": "lite-server",
@@ -48,6 +49,7 @@
     "moment": "^2.28.0",
     "morgan": "^1.10.0",
     "nodejs-websocket": "^1.7.2",
+    "nodemailer": "^6.4.11",
     "nodemon": "^2.0.4",
     "supertest": "^1.0.1"
   }

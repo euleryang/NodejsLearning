@@ -1,5 +1,6 @@
 /*  文件名  main.js  */
-
+//node.js 模拟自动发送邮件验证码
+//https://zhuanlan.zhihu.com/p/171568384
 //导入我们sendEmail.js文件中导出的东西
 const sendEmail = require('./sendEmail.js')
 
